@@ -400,6 +400,6 @@ function geolocate() {
 }
 </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOrpaa9ECnY2JUib0NWv3QXH21JMvc-p4&libraries=places&callback=initAutocomplete"
+<script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&libraries=places&callback=initAutocomplete"
             async defer></script>
 @endsection
