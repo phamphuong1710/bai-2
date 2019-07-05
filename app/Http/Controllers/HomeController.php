@@ -26,7 +26,6 @@ class HomeController extends Controller
         return view('admin.home');
     }
 
-
     /**
      * Show the form for creating a new resource.
      *
@@ -45,7 +44,7 @@ class HomeController extends Controller
      */
     public function store(Request $request)
     {
-
+        //
     }
 
     /**

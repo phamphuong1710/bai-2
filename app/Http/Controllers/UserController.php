@@ -18,6 +18,7 @@ class UserController extends Controller
      * @return void
      */
     protected $userService;
+
     public function __construct(UserService $userService)
     {
         $this->middleware('auth');

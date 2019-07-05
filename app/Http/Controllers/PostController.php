@@ -22,6 +22,7 @@ class PostController extends Controller
     protected $imageService;
     protected $postService;
     protected $categoryService;
+
     public function __construct(PostService $postService,
         ImageService $imageService,
         CategoryService $categoryService)
@@ -31,9 +32,9 @@ class PostController extends Controller
         $this->imageService = $imageService;
         $this->categoryService = $categoryService;
     }
+
     public function index()
     {
-
         $posts = $this->postService->getAllPost();
 
         return view('admin.post.list', compact('posts'));
@@ -139,5 +140,4 @@ class PostController extends Controller
 
         return view('admin.post.list', compact('posts'));
     }
-
 }

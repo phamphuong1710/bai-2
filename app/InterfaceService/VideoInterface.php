@@ -3,6 +3,5 @@
 namespace App\InterfaceService;
 
 interface VideoInterface {
-    // public function createVideo($request);
-
+    public function createVideo($request);
 }

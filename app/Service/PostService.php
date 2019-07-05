@@ -7,7 +7,6 @@ use Carbon\Carbon;
 
 class PostService implements PostInterface
 {
-
     public function createPost($request)
     {
         $current_date_time = Carbon::now()->timestamp;

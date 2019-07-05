@@ -7,6 +7,6 @@ interface ImageInterface {
     public function getImageByPostId($id);
     public function deleteImages($id);
     public function getImageById($id);
-    public function updateImagePostID($id, $postId, $position);
+    public function updateImagePostId($id, $postId, $position);
     public function listImage($postId);
 }

@@ -3,18 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Service\VideoService;
 use App\Http\Resources\VideoResource as VideoResource;
 
 class VideoController extends Controller
 {
     protected $videoService;
+
     public function __construct(VideoService $videoService)
     {
         $this->middleware('auth');
         $this->videoService = $videoService;
     }
+
     /**
      * Display a listing of the resource.
      *

@@ -8,7 +8,6 @@ use Carbon\Carbon;
 
 class VideoService implements VideoInterface
 {
-
     public function createVideo($request)
     {
         $image = new Image();

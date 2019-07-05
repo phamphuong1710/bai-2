@@ -8,7 +8,6 @@ use Intervention\Image\ImageManagerStatic as Image;
 
 class ImageService implements ImageInterface
 {
-
     public function createImage($request,$post_id=null)
     {
         if($request->hasfile('image')) {
@@ -74,9 +73,7 @@ class ImageService implements ImageInterface
         return $image;
     }
 
-
-
-    public function updateImagePostID($id, $postId, $position)
+    public function updateImagePostId($id, $postId, $position)
     {
         $image = Media::find($id);
         $image->post_id = $postId;
@@ -86,7 +83,9 @@ class ImageService implements ImageInterface
 
     public function listImage($postId)
     {
-        $images = Media::where('post_id', $postId)->orderBy('position','asc')->get();
+        $images = Media::where('post_id', $postId)
+            ->orderBy('position','asc')
+            ->get();
         $listImage = [];
         foreach ($images as $image) {
             array_push($listImage, $image->id);

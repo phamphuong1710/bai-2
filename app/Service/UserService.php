@@ -7,7 +7,6 @@ use Illuminate\Support\Facades\Hash;
 
 class UserService implements UserInterface
 {
-
     public function getAllUser()
     {
         $users = User::all();
@@ -15,7 +14,7 @@ class UserService implements UserInterface
         return $users;
     }
 
-    public function getUserByID($id)
+    public function getUserById($id)
     {
         $user = User::find($id);
 

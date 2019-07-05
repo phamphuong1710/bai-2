@@ -8,7 +8,6 @@ use App\Http\Resources\ImageResource as ImageResource;
 
 class ImageController extends Controller
 {
-
     protected $imageService;
 
     public function __construct(ImageService $imageService)
@@ -47,7 +46,6 @@ class ImageController extends Controller
         $data = $this->imageService->createImage($request, null);
 
         return response()->json(['data' => $data]);
-
     }
 
     /**
@@ -58,7 +56,7 @@ class ImageController extends Controller
      */
     public function show($id)
     {
-
+        //
     }
 
     /**

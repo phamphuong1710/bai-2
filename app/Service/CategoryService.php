@@ -6,7 +6,6 @@ use App\Category; // model
 
 class CategoryService implements CategoryInterface
 {
-
     public function createCategory($request)
     {
         $category = new Category();
